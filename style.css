@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00ff00;  /* Green text */
+}
+
+/* Terminal setup */
+#terminal {
+    position: relative;
+    color: #00ff00;
+    text-align: left;
+}
+
+/* Input box without border */
+#password-input {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+    color: #00ff00;
+    background: black;
+    border: none;
+    outline: none;
+    width: 300px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+/* Riddle Text */
+#riddle-text {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    white-space: pre-wrap;
+}
+
+/* Mobile styling */
+@media (max-width: 600px) {
+    #password-input {
+        width: 80%;
+    }
+}
